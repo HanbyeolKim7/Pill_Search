@@ -8,7 +8,7 @@ def detect_pill(model_path, image_path):
     image = cv2.imread(image_path)
     results = model(image)
 
-    detected_boxes =[]
+    detected_boxes = []
 
     for result in results:
         boxes = result.boxes.xyxy.cpu().numpy()
