@@ -3,9 +3,9 @@ import openai
 import random
 import os
 
-openai_api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key = openai_api_key
-print(openai_api_key)
+
+openai.api_key = "openai_api_key"
+# print(openai_api_key)
 
 random.seed(42)
 
